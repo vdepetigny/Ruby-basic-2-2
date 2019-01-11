@@ -9,8 +9,7 @@ puts journalists.size
 puts journalists.count { |journalist| journalist.match(/\d/)}
 
 #3 Count Aude occurences
-puts journalists.count { |journalist| journalist.downcase.match("aude") }
-puts journalists.count { |journalist| journalist.match("<aude><Aude>") }
+puts journalists.count { |journalist| journalist.downcase.match("aude") }}
 
 #4 Count emails that start with a capital letter
 puts journalists.count { |journalist| journalist.match(/(@)\p{Lu}/) }
@@ -21,14 +20,14 @@ puts journalists.count { |journalist| journalist.match(/^@[A-Z]/) }
 puts journalists.count { |journalist| journalist.match(/\p{Lu}/) }
 
 #6 Count underscore level
-puts journalists.join.count "_"
+#puts journalists.join.count "_"
 
 #7 Sort in alphabetical order
-puts journalists.sort_by { |journalist| journalist.downcase }
+#puts journalists.sort_by { |journalist| journalist.downcase }
 
 #8 Find the 50 smallest arrays
-print journalists.sort_by { |journalist| journalist.length } [0..49]
-puts " "
+#print journalists.sort_by { |journalist| journalist.length } [0..49]
+#puts " "
 
 #9 Find position of @epenser
-puts journalists.index("@epenser")
+#puts journalists.index("@epenser")
